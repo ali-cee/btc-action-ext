@@ -1,0 +1,12 @@
+{
+  "name": "btc-action-ext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --outDir build && cp manifest.json build/ && cp -r popup build/ && cp content/index.css build/content/"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}

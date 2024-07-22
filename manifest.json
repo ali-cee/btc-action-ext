@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "BTC Actions",
+    "version": "0.0.1",
+    "description": "BTC Actions Extension",
+    "action": {
+        "default_title": "BTC Actions",
+        "default_popup": "popup/index.html"
+    },
+    "background": {
+        "service_worker": "background/index.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content/index.js"],
+            "css": ["content/index.css"]
+        }
+    ],
+    "permissions": ["notifications"]
+}
